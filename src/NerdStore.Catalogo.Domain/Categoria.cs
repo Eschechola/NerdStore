@@ -30,6 +30,12 @@ namespace NerdStore.Catalogo.Domain
             return $"{Nome} - {Codigo}";
         }
 
+        public void Validar()
+        {
+            Validacoes.ValidarSeVazio(Nome, "O campo Nome a categoria não pode estar vazio.");
+            Validacoes.ValidarSeIgual(Codigo, 0, "O campo Codigo não pode ser 0.");
+        }
+
         #endregion
     }
 }

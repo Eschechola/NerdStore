@@ -1,8 +1,7 @@
 ﻿using NerdStore.Core.DomainObjects;
-using System.Collections;
 using System.Collections.Generic;
 
-namespace NerdStore.Catalogo.Domain
+namespace NerdStore.Catalogo.Domain.Entities
 {
     public class Categoria : Entity
     {

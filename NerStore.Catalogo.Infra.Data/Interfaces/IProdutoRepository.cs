@@ -1,4 +1,4 @@
-﻿using NerdStore.Catalogo.Domain;
+﻿using NerdStore.Catalogo.Domain.Entities;
 using NerdStore.Core.Data;
 using System;
 using System.Collections.Generic;

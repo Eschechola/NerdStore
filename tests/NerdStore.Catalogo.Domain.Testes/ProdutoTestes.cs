@@ -2,7 +2,7 @@ using NerdStore.Core.DomainObjects;
 using System;
 using Xunit;
 
-namespace NerdStore.Catalogo.Domain.Testes
+namespace NerdStore.Catalogo.Domain.Entities.Testes
 {
     public class ProdutoTestes
     {

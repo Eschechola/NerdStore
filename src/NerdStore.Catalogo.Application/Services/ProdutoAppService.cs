@@ -4,10 +4,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using NerdStore.Catalogo.Application.ViewModels;
 using NerdStore.Catalogo.Domain;
-using NerdStore.Catalogo.Domain.Entities;
-using NerdStore.Catalogo.Services.Interfaces;
 using NerdStore.Core.DomainObjects;
-using NerStore.Catalogo.Infra.Data.Interfaces;
 
 namespace NerdStore.Catalogo.Application.Services
 {

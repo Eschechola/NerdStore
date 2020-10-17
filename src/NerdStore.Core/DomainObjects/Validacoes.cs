@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace NerdStore.Core.DomainObjects
 {
-    //AssertionConcern
     public class Validacoes
     {
         public static void ValidarSeIgual(object object1, object object2, string mensagem)
@@ -51,7 +47,7 @@ namespace NerdStore.Core.DomainObjects
                 throw new DomainException(mensagem);
             }
         }
-
+        
         public static void ValidarSeVazio(string valor, string mensagem)
         {
             if (valor == null || valor.Trim().Length == 0)
@@ -85,14 +81,6 @@ namespace NerdStore.Core.DomainObjects
         }
 
         public static void ValidarMinimoMaximo(int valor, int minimo, int maximo, string mensagem)
-        {
-            if (valor < minimo || valor > maximo)
-            {
-                throw new DomainException(mensagem);
-            }
-        }
-
-        public static void ValidarMinimoMaximo(decimal valor, decimal minimo, int maximo, string mensagem)
         {
             if (valor < minimo || valor > maximo)
             {

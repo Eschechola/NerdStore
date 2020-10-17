@@ -1,5 +1,5 @@
-﻿using NerdStore.Core.DomainObjects;
-using System;
+﻿using System;
+using NerdStore.Core.DomainObjects;
 
 namespace NerdStore.Catalogo.Domain.Events
 {
@@ -7,9 +7,9 @@ namespace NerdStore.Catalogo.Domain.Events
     {
         public int QuantidadeRestante { get; private set; }
 
-        public ProdutoAbaixoEstoqueEvent(Guid aggregateId, int quantidadeRestantante): base(aggregateId)
+        public ProdutoAbaixoEstoqueEvent(Guid aggregateId, int quantidadeRestante) : base(aggregateId)
         {
-            QuantidadeRestante = quantidadeRestantante;
+            QuantidadeRestante = quantidadeRestante;
         }
     }
 }
